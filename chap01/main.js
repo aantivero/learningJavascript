@@ -2,4 +2,7 @@
 /**
  * Created by alex on 19/03/2016.
  */
-console.log('main.js loaded');
+$(document).ready(function(){
+    'use strict';
+    console.log('main.js loaded');
+});
