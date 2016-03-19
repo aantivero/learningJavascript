@@ -11,7 +11,7 @@ $(document).ready(function(){
     //manipulando ingreso de usuario
     var tool = new Tool();//handler user input
     tool.onMouseDown = function (event){
-        var c = Shape.Circle(event.point.x, event.point.y, 20);
+        var c = Shape.Circle(event.point, 20);
         c.fillColor = 'green';
     };
     paper.view.draw();//le indico que dibuje
