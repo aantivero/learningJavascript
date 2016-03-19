@@ -8,13 +8,11 @@ $(document).ready(function(){
 
     paper.install(window);//instala la libreria a nivel global
     paper.setup(document.getElementById('mainCanvas'));//atacha paper al canvas
-    //dibujando 64 circulos 
-    var c;
-    for (var x = 25; x < 400; x += 50){
-        for (var y = 25; y < 400; y += 50){
-            c = Shape.Circle(x, y, 20);
-            c.fillColor = 'green';
-        }
-    }
+    //manipulando ingreso de usuario
+    var tool = new Tool();//handler user input
+    tool.onMouseDown = function (event){
+        var c = Shape.Circle(event.point.x, event.point.y, 20);
+        c.fillColor = 'green';
+    };
     paper.view.draw();//le indico que dibuje
 });
