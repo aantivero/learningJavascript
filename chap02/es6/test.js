@@ -11,7 +11,7 @@ const sentences = [
 //object destructuring
 function say({subject, verb, object}){
     //template string
-    console.log(`${subject} ${verb} ${object}`);
+    console.log(`${subject} ${verb} ${object}`);//eslint-disable-line
 }
 //for ..of
 for(let s of sentences){

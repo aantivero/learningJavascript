@@ -8,6 +8,10 @@
         "sourceType": "module"
     },
     "rules": {
+        "comma-dangle": [
+            2,
+            "always-multiline"
+        ],
         "indent": [
             "error",
             4
